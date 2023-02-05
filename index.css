@@ -1,0 +1,114 @@
+.first-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+button{
+    cursor: pointer;
+}
+.controls{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.timer{
+    font-size: 30px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+/**/
+
+.second-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+    width: 100vw;
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    background-color: rgb(186, 184, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: transparent;
+    font-size: inherit;
+    z-index: 2;
+    border-radius: 4px;
+}
+.show {
+    position: relative;
+    color: white;
+}
+.show:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+
+ }
+
+.card[data-active='true']{
+    color:  red !important;
+}
+
+.message {
+    font-size: 30px;
+}
+
+.try-again-button {
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 40px;
+}
+
+.show .card {
+        color: white;
+}
+
+.message{
+    position: absolute;
+    margin: 0 auto;
+    top: -50px;
+    z-index: 222;
+    border-radius: 4px;
+    background-color: bisque;
+    color: #343434;
+}
